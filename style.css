@@ -1,46 +1,315 @@
-.foto-perfil{
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    border-radius: 50%;
+* {
+    font-family: Lexend, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.corPrimaria{
-    background-color: aqua;
+
+body {
+    padding-top: 0%;
+    background-color: #1f1c32;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-.corSecundaria{
-    background-color: #2c3e50;
+
+.containerProjects {
+    width: 1150px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
 }
-p{
-    font-family:Lato, "Helvetica Meue", Arial, Helvetica, sans-serif;
+
+.container {
+    width: 1150px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .cards {
+    position: relative;
+    height: 530px;
+    width: 500px;
+    background-color: #1f1c32;
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .cards img {
+    height: 280px;
+    transition: 0.5s;
+}
+
+.container .cards h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.container .cards .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container .cards .content p {
+    color: white !important;
+    transition: 0.5s;
+}
+
+.container .cards .content a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.container .cards:hover {
+    background-color: white;
+    color: white;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #dc2e685d;
+    border-color: #dc2e69;
+}
+
+.container .cards:hover .content img {
+    color: white;
+}
+
+.container .cards:hover .content p {
     color: black !important;
 }
-.icones{
-    padding-left: 5px;
+
+.container .cards:hover h2 {
+    color: black !important;
 }
-.titulosBrancos{
+
+.container .cards:hover .content a {
+    color: black;
+    background-color: black;
+}
+
+#projetos .more-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+#projetos .more-projects a {
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--bg);
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+#projetos .more-projects a:hover {
+    border: 1px solid var(--dark-bg);
+}
+
+.tam {
+    width: 503.906px;
+}
+
+h1 {
+    font-size: 50px;
+    color: white !important;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    transform: none;
+    transition: all 0.6s ease 0s;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    margin: 0 15px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    margin: 0 15px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.foto-perfil {
+    height: 30%;
+    width: auto;
+    max-width: 10%;
+    border-radius: 80%;
+    border-color: white;
+    margin-top: 40px;
+}
+
+.corPrimaria {
+    background-color: #101010;
+}
+
+.corSecundaria {
+    background-color: #000000;
+}
+
+p {
+    color: white !important;
+}
+
+.icones {
+    padding-left: 10px;
+    font-size: 20px
+}
+
+.titulosBrancos {
     text-decoration: underline;
     text-underline-position: below;
     padding-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
+    text-align: center !important;
 }
-.titulosVerdes{
-    text-decoration: underline;
-    text-underline-position: below;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #18bc9c;
-}
-.textoBranco{
+
+.textoBranco {
     color: white !important;
 }
-.jumbotron{
+
+.jumbotron {
     margin-bottom: 0px;
 }
-.textoFooter{
+
+.textoFooter {
     margin: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+#experiencia {
+    padding: 0 5rem;
+    padding-bottom: 13.4375rem;
+}
+
+#experiencia .info {
+    padding-top: 8rem;
+}
+
+#experiencia h2 {
+    text-align: left;
+    color: #fff;
+}
+
+#experiencia h3 {
+    padding-top: 1rem;
+    padding-bottom: 1.6rem;
+    text-align: left;
+    color: #fff;
+}
+
+#experiencia p {
+    padding-top: 1.6rem;
+    display: inline-block;
+    border-top: 1px solid whitesmoke;
+    text-align: left;
+}
+
+#experiencia .info-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+#experiencia .info-link a {
+    padding-top: 1.6rem;
+    text-decoration: none;
+    transition: filter 0.8s;
+}
+
+#experiencia .info-link a:hover {
+    text-decoration: underline;
+    filter: brightness(0.8);
+}
+
+#experiencia .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experiencia .date time {
+    color: whitesmoke;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 200px;
+    transition: all 0.3s ease-out;
+    background-color: #101010;
+    color: #fff;
+}
+
+.img-card {
+    font-size: 15px !important;
+}
+
+.foto {
+    height: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.image {
+    float: right;
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.blue {
+    border-left: 3px solid #4895ff;
+}
+
+.orange {
+    border-left: 3px solid orangered;
+}
+
+.yelow {
+    border-left: 3px solid yellow;
+}
+
+.purple {
+    border-left: 3px solid purple;
+}
+
+.green {
+    border-left: 3px solid green;
 }
