@@ -5,10 +5,6 @@ https://meuportfolio-five.vercel.app/
 
 ## FALTA FAZER
 
-- Adicionar o CV
-
 - Adicionar a troca de lingua
-
-- Adicionar os projetos
 
 - Adicionar a troca de temas
