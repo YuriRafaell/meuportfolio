@@ -26,6 +26,7 @@ import {
   skills,
   technicalActivity,
 } from '../data/portfolio'
+import euAvatar from '../assets/eu-avatar.jpg'
 
 export function HomePage() {
   const [isDark, setIsDark] = useState(true)
@@ -141,7 +142,7 @@ export function HomePage() {
                   </div>
                   <div className="mt-8 flex items-center gap-5">
                     <img
-                      src="/src/assets/eu-avatar.jpg"
+                      src={euAvatar}
                       alt="Yuri Rafael"
                       className="size-20 rounded-3xl object-cover object-center shadow-lg"
                     />

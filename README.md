@@ -65,6 +65,7 @@ npm run build
 ## Próximos passos recomendados
 
 - Substituir links placeholders por links reais.
-- Adicionar um currículo em PDF e imagens profissionais.
 - Integrar um serviço real de formulário.
 - Implementar testes e otimizações adicionais de performance.
+- Implementar a escolha do tema para claro ou escuro.
+- Implementar a escolha da língua par BR-PT, EN ou ES.
